@@ -4,11 +4,9 @@
 class GoMusicfox < Formula
   desc "go-musicfox是musicfox的重写版，使用Go编写的网易云音乐命令行程序。"
   homepage "https://github.com/anhoder/go-musicfox"
-  url "https://github.com/anhoder/go-musicfox/releases/download/v2.0.0/musicfox.mac"
-  version "v2.0.0"
-  sha256 "4ab97673ffc2560ae2d51d6aec4b87a06bcc9cb96d1052ec004c90073236ee0a"
-
-  depends_on "terminal-notifier"
+  url "https://github.com/anhoder/go-musicfox/releases/download/v2.0.1/musicfox.mac"
+  version "v2.0.1"
+  sha256 "b3a731d16fdd5619d4cf2bb096946c3513259dacc377eea26590c1e331074a0c"
 
   def install
     system 'mv musicfox.mac musicfox'
