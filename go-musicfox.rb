@@ -10,7 +10,7 @@ class GoMusicfox < Formula
 
   def install
     system 'mv musicfox.mac musicfox'
-    system 'echo', '-e', "\033[1;33m给个star✨吧~\033[0m => \033[4;36mhttps://github.com/anhoder/go-musicfox\033[0m"
+    system 'echo', '-e', "\033[1;33m给个star✨吧~\033[0m \033[4;36mhttps://github.com/anhoder/go-musicfox \033[0m"
     bin.install 'musicfox'
   end
 
