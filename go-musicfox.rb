@@ -8,18 +8,18 @@ class GoMusicfox < Formula
   version "2.2.0"
 
   on_macos do
-    if Hardware::CPU.arm?
-      url "https://github.com/anhoder/go-musicfox/releases/v2.2.0/go-musicfox_2.2.0_darwin_arm64.zip"
-      sha256 "cfbe622cbf5eb2d6490e58258ff844212091ac1a00c8e0182a4f0ec93da03ba8"
+    if Hardware::CPU.intel?
+      url "https://github.com/anhoder/go-musicfox/releases/download/v2.2.0/go-musicfox_2.2.0_darwin_amd64.zip"
+      sha256 "cfd33eb649f0f8219fe3f5340db2ddeeedd76e9e4260af8cfa69b6995ec76954"
 
       def install
         system 'echo', '-e', "\033[1;33m给个star✨吧~\033[0m \033[4;36mhttps://github.com/anhoder/go-musicfox \033[0m"
         bin.install 'musicfox'
       end
     end
-    if Hardware::CPU.intel?
-      url "https://github.com/anhoder/go-musicfox/releases/v2.2.0/go-musicfox_2.2.0_darwin_amd64.zip"
-      sha256 "c19d2ecb17609f79caf07dedbf517dba94edc33f445dd22ee5e7c80033253777"
+    if Hardware::CPU.arm?
+      url "https://github.com/anhoder/go-musicfox/releases/download/v2.2.0/go-musicfox_2.2.0_darwin_arm64.zip"
+      sha256 "1d31f16154564da0a8bfa80affcaaa70895ca1630c43a2c7e362ceb9d4be6627"
 
       def install
         system 'echo', '-e', "\033[1;33m给个star✨吧~\033[0m \033[4;36mhttps://github.com/anhoder/go-musicfox \033[0m"
@@ -30,8 +30,8 @@ class GoMusicfox < Formula
 
   on_linux do
     if Hardware::CPU.intel?
-      url "https://github.com/anhoder/go-musicfox/releases/v2.2.0/go-musicfox_2.2.0_linux_amd64.zip"
-      sha256 "e0d3feec80bad3fa4227c05aa66d9b04f4a91304d1745c955e29f133f350430e"
+      url "https://github.com/anhoder/go-musicfox/releases/download/v2.2.0/go-musicfox_2.2.0_linux_amd64.zip"
+      sha256 "c0c68d107af5ee216aac0ab52ad6bdfda924c87de3609802e4248079273df42c"
 
       def install
         system 'echo', '-e', "\033[1;33m给个star✨吧~\033[0m \033[4;36mhttps://github.com/anhoder/go-musicfox \033[0m"
