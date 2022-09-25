@@ -5,21 +5,21 @@
 class GoMusicfox < Formula
   desc "go-musicfox是musicfox的重写版，使用Go编写的网易云音乐命令行程序。"
   homepage "https://github.com/anhoder/go-musicfox"
-  version "2.2.1"
+  version "3.0.0"
 
   on_macos do
-    if Hardware::CPU.intel?
-      url "https://github.com/anhoder/go-musicfox/releases/download/v2.2.1/go-musicfox_2.2.1_darwin_amd64.zip"
-      sha256 "ec9462f28ff608ba72dbc5556026f8cd4e716faf18644ac3d65a8d96adcf1218"
+    if Hardware::CPU.arm?
+      url "https://github.com/anhoder/go-musicfox/releases/download/v3.0.0/go-musicfox_3.0.0_darwin_arm64.zip"
+      sha256 "b499536052e2570d47764640ecea6738d22b72b87658812cd07f3551897a6b4e"
 
       def install
         system 'echo', '-e', "\033[1;33m给个star✨吧~\033[0m \033[4;36mhttps://github.com/anhoder/go-musicfox \033[0m"
         bin.install 'musicfox'
       end
     end
-    if Hardware::CPU.arm?
-      url "https://github.com/anhoder/go-musicfox/releases/download/v2.2.1/go-musicfox_2.2.1_darwin_arm64.zip"
-      sha256 "71478799a2aaaeca5809eb61dbd34244c02894a2011169a66f4586cd62ded0c8"
+    if Hardware::CPU.intel?
+      url "https://github.com/anhoder/go-musicfox/releases/download/v3.0.0/go-musicfox_3.0.0_darwin_amd64.zip"
+      sha256 "45cc52acf8a8d352d0fb63f68e40883ec0ffa07b9c5a0f30dc4981a52c15e712"
 
       def install
         system 'echo', '-e', "\033[1;33m给个star✨吧~\033[0m \033[4;36mhttps://github.com/anhoder/go-musicfox \033[0m"
@@ -30,8 +30,8 @@ class GoMusicfox < Formula
 
   on_linux do
     if Hardware::CPU.intel?
-      url "https://github.com/anhoder/go-musicfox/releases/download/v2.2.1/go-musicfox_2.2.1_linux_amd64.zip"
-      sha256 "0d923511165cc082ea0ab5917f5e3f3853de9d0a8d5e99cba2e9a61384a9d352"
+      url "https://github.com/anhoder/go-musicfox/releases/download/v3.0.0/go-musicfox_3.0.0_linux_amd64.zip"
+      sha256 "c962af94571bf45125612106b71ed3518c16f8f5ed06bb4b199d14d572284c1e"
 
       def install
         system 'echo', '-e', "\033[1;33m给个star✨吧~\033[0m \033[4;36mhttps://github.com/anhoder/go-musicfox \033[0m"
@@ -40,5 +40,5 @@ class GoMusicfox < Formula
     end
   end
 
-  depends_on "terminal-notifier"
+  depends_on "terminal-notifier" => :optional
 end
