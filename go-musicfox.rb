@@ -10,7 +10,7 @@ class GoMusicfox < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/go-musicfox/go-musicfox/releases/download/v3.7.6/go-musicfox_3.7.6_darwin_amd64.zip"
-      sha256 "5734a498d25395b6f536d555737a1abdd629de7a31ff95bf9bacfcdc9766ea0f"
+      sha256 "47c25b1c4137b2654fe52d0f1cfb00fed3ec30dcb13700deb0d560662ff42d59"
 
       def install
         system 'echo', '-e', "\033[1;33m给个star✨吧~\033[0m \033[4;36mhttps://github.com/go-musicfox/go-musicfox \033[0m"
@@ -19,7 +19,7 @@ class GoMusicfox < Formula
     end
     if Hardware::CPU.arm?
       url "https://github.com/go-musicfox/go-musicfox/releases/download/v3.7.6/go-musicfox_3.7.6_darwin_arm64.zip"
-      sha256 "cc6e68db715e1559f51bd63510da92c9efba19c1376e604f32a4006503c2b553"
+      sha256 "5e638b88c6c1faa9f6eac0c143c46c5b2a61eba3c843dfd88ffb58a370c87270"
 
       def install
         system 'echo', '-e', "\033[1;33m给个star✨吧~\033[0m \033[4;36mhttps://github.com/go-musicfox/go-musicfox \033[0m"
@@ -31,7 +31,7 @@ class GoMusicfox < Formula
   on_linux do
     if Hardware::CPU.intel?
       url "https://github.com/go-musicfox/go-musicfox/releases/download/v3.7.6/go-musicfox_3.7.6_linux_amd64.zip"
-      sha256 "81a2f681f5421b305d08abd869b7bfb07c490d7ef9787f9372701ca222e2228a"
+      sha256 "cc2fea4ceaa91d9940eabce1226283b5fbd558bc56516e7080daf0731e2075f8"
 
       def install
         system 'echo', '-e', "\033[1;33m给个star✨吧~\033[0m \033[4;36mhttps://github.com/go-musicfox/go-musicfox \033[0m"
