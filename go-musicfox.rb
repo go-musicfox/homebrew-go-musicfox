@@ -5,12 +5,12 @@
 class GoMusicfox < Formula
   desc "go-musicfox是musicfox的重写版，使用Go编写的网易云音乐命令行程序。"
   homepage "https://github.com/go-musicfox/go-musicfox"
-  version "3.7.5"
+  version "3.7.6"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/go-musicfox/go-musicfox/releases/download/v3.7.5/go-musicfox_3.7.5_darwin_amd64.zip"
-      sha256 "c90bc1383d1bae212b40489a189cfa19a83aede75b4079d958b10140c17ac54d"
+      url "https://github.com/go-musicfox/go-musicfox/releases/download/v3.7.6/go-musicfox_3.7.6_darwin_amd64.zip"
+      sha256 "5734a498d25395b6f536d555737a1abdd629de7a31ff95bf9bacfcdc9766ea0f"
 
       def install
         system 'echo', '-e', "\033[1;33m给个star✨吧~\033[0m \033[4;36mhttps://github.com/go-musicfox/go-musicfox \033[0m"
@@ -18,8 +18,8 @@ class GoMusicfox < Formula
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/go-musicfox/go-musicfox/releases/download/v3.7.5/go-musicfox_3.7.5_darwin_arm64.zip"
-      sha256 "9cd16e0c6f0464d58b683bfc07dd038ea04239cb53eed5cf71c34f2054442891"
+      url "https://github.com/go-musicfox/go-musicfox/releases/download/v3.7.6/go-musicfox_3.7.6_darwin_arm64.zip"
+      sha256 "cc6e68db715e1559f51bd63510da92c9efba19c1376e604f32a4006503c2b553"
 
       def install
         system 'echo', '-e', "\033[1;33m给个star✨吧~\033[0m \033[4;36mhttps://github.com/go-musicfox/go-musicfox \033[0m"
@@ -30,8 +30,8 @@ class GoMusicfox < Formula
 
   on_linux do
     if Hardware::CPU.intel?
-      url "https://github.com/go-musicfox/go-musicfox/releases/download/v3.7.5/go-musicfox_3.7.5_linux_amd64.zip"
-      sha256 "270432887d7e1e524072bfe5c2d789d77b4f6825ee972f8899fcc7de8dc9c0d7"
+      url "https://github.com/go-musicfox/go-musicfox/releases/download/v3.7.6/go-musicfox_3.7.6_linux_amd64.zip"
+      sha256 "81a2f681f5421b305d08abd869b7bfb07c490d7ef9787f9372701ca222e2228a"
 
       def install
         system 'echo', '-e', "\033[1;33m给个star✨吧~\033[0m \033[4;36mhttps://github.com/go-musicfox/go-musicfox \033[0m"
