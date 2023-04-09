@@ -5,21 +5,21 @@
 class GoMusicfox < Formula
   desc "go-musicfox是musicfox的重写版，使用Go编写的网易云音乐命令行程序。"
   homepage "https://github.com/go-musicfox/go-musicfox"
-  version "3.7.7"
+  version "4.0.0"
 
   on_macos do
-    if Hardware::CPU.intel?
-      url "https://github.com/go-musicfox/go-musicfox/releases/download/v3.7.7/go-musicfox_3.7.7_darwin_amd64.zip"
-      sha256 "20d87c00b49013790408b3ed004d7dfed7b4c40b774782815b5474c6b377c2ce"
+    if Hardware::CPU.arm?
+      url "https://github.com/go-musicfox/go-musicfox/releases/download/v4.0.0/go-musicfox_4.0.0_darwin_arm64.zip"
+      sha256 "d35b529406a8517af60f1396386fd0596ad46eb27016b59c6b8285105a19b207"
 
       def install
         system 'echo', '-e', "\033[1;33m给个star✨吧~\033[0m \033[4;36mhttps://github.com/go-musicfox/go-musicfox \033[0m"
         bin.install 'musicfox'
       end
     end
-    if Hardware::CPU.arm?
-      url "https://github.com/go-musicfox/go-musicfox/releases/download/v3.7.7/go-musicfox_3.7.7_darwin_arm64.zip"
-      sha256 "9439a7b1051e679b1bd6d1b30cad736cd34add22a2cf844ba1a489809b1f2115"
+    if Hardware::CPU.intel?
+      url "https://github.com/go-musicfox/go-musicfox/releases/download/v4.0.0/go-musicfox_4.0.0_darwin_amd64.zip"
+      sha256 "47bd0945fe555dcd20968b779e35b8e5e7c0647b79688cd5c0c4f70ff0eccc99"
 
       def install
         system 'echo', '-e', "\033[1;33m给个star✨吧~\033[0m \033[4;36mhttps://github.com/go-musicfox/go-musicfox \033[0m"
@@ -30,8 +30,8 @@ class GoMusicfox < Formula
 
   on_linux do
     if Hardware::CPU.intel?
-      url "https://github.com/go-musicfox/go-musicfox/releases/download/v3.7.7/go-musicfox_3.7.7_linux_amd64.zip"
-      sha256 "462e4cfb0bc0c64ca84ab8c72b2236a944a211d97a6de506de33c86556d0a21a"
+      url "https://github.com/go-musicfox/go-musicfox/releases/download/v4.0.0/go-musicfox_4.0.0_linux_amd64.zip"
+      sha256 "d3f7b89f3a6b2389b0fa107094aba9a68aa8460a0ff2498a675cf00eda103cd0"
 
       def install
         system 'echo', '-e', "\033[1;33m给个star✨吧~\033[0m \033[4;36mhttps://github.com/go-musicfox/go-musicfox \033[0m"
