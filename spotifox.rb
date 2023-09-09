@@ -12,7 +12,7 @@ class Spotifox < Formula
   on_macos do
     if Hardware::CPU.arm?
       url "https://github.com/go-musicfox/spotifox/releases/download/v1.0.0/spotifox_1.0.0_darwin_arm64.zip"
-      sha256 "f84a0d164d4220adc33d764463a5fc89fd840361a5b8ed0eef17df731c8d70b5"
+      sha256 "29910b1c73337b91b75c3a13584a90685bf05a8d8e3ed642af37a4950797928c"
 
       def install
         system 'echo', '-e', "\033[1;33mStar✨ Please~\033[0m \033[4;36mhttps://github.com/go-musicfox/spotifox \033[0m"
@@ -21,7 +21,7 @@ class Spotifox < Formula
     end
     if Hardware::CPU.intel?
       url "https://github.com/go-musicfox/spotifox/releases/download/v1.0.0/spotifox_1.0.0_darwin_amd64.zip"
-      sha256 "080a278f96220deb0f7900af1689d2a1ff4fe5a7a00ef444ff269d3edaf658f8"
+      sha256 "66f08fcf468a37337e587ae811c38dc8c1b9eb97172cc4010d934f2b5bf27bf6"
 
       def install
         system 'echo', '-e', "\033[1;33mStar✨ Please~\033[0m \033[4;36mhttps://github.com/go-musicfox/spotifox \033[0m"
@@ -33,7 +33,7 @@ class Spotifox < Formula
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/go-musicfox/spotifox/releases/download/v1.0.0/spotifox_1.0.0_linux_arm64.zip"
-      sha256 "025fbbae722e85e7edbb9b29e3c97a8cbc74dec47769ae75f61fa4f4c6557d68"
+      sha256 "45c2dc5fbd2ba7d0ca00b6220ad1cdce17234888add6a68a53cdf353d51ab3bd"
 
       def install
         system 'echo', '-e', "\033[1;33mStar✨ Please~\033[0m \033[4;36mhttps://github.com/go-musicfox/spotifox \033[0m"
@@ -42,7 +42,7 @@ class Spotifox < Formula
     end
     if Hardware::CPU.intel?
       url "https://github.com/go-musicfox/spotifox/releases/download/v1.0.0/spotifox_1.0.0_linux_amd64.zip"
-      sha256 "a88667f45aea27e00eaf06efa34f63c767b168e02f90d7b3f1ef381fd83e3d2c"
+      sha256 "12eeb86d3629847b55a3c23e92fcc9a04089f96b9bee5ee82d6b994f0970f68e"
 
       def install
         system 'echo', '-e', "\033[1;33mStar✨ Please~\033[0m \033[4;36mhttps://github.com/go-musicfox/spotifox \033[0m"
@@ -51,7 +51,7 @@ class Spotifox < Formula
     end
     if Hardware::CPU.arm? && !Hardware::CPU.is_64_bit?
       url "https://github.com/go-musicfox/spotifox/releases/download/v1.0.0/spotifox_1.0.0_linux_arm.zip"
-      sha256 "3608c45688046c9067699534ae498b8e8f6dd451c1be32240a6806c6ac279eee"
+      sha256 "a785205d20aabc2b10fafcdfbf560be0dc2f5e53022993d4bd6a2419d70bd73f"
 
       def install
         system 'echo', '-e', "\033[1;33mStar✨ Please~\033[0m \033[4;36mhttps://github.com/go-musicfox/spotifox \033[0m"
