@@ -3,7 +3,7 @@
 Install:
 
 ```sh
-brew tap anhoder/go-musicfox && brew install go-musicfox
+brew tap go-musicfox/go-musicfox && brew install go-musicfox
 ```
 
 ### spotifox
@@ -11,5 +11,5 @@ brew tap anhoder/go-musicfox && brew install go-musicfox
 Install:
 
 ```sh
-brew tap anhoder/go-musicfox && brew install spotifox
+brew tap go-musicfox/go-musicfox && brew install spotifox
 ```
