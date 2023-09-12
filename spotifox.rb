@@ -5,14 +5,14 @@
 class Spotifox < Formula
   desc "Spotifox is yet another spotify CLI client."
   homepage "https://github.com/go-musicfox/spotifox"
-  version "1.0.0"
+  version "1.0.1"
 
   depends_on "terminal-notifier" => :optional
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/go-musicfox/spotifox/releases/download/v1.0.0/spotifox_1.0.0_darwin_arm64.zip"
-      sha256 "29910b1c73337b91b75c3a13584a90685bf05a8d8e3ed642af37a4950797928c"
+      url "https://github.com/go-musicfox/spotifox/releases/download/v1.0.1/spotifox_1.0.1_darwin_arm64.zip"
+      sha256 "86649e928b8aae45f1cccda8aeebb79e7154cad0cf84c9b4bce5d4a1e53dc116"
 
       def install
         system 'echo', '-e', "\033[1;33mStar✨ Please~\033[0m \033[4;36mhttps://github.com/go-musicfox/spotifox \033[0m"
@@ -20,8 +20,8 @@ class Spotifox < Formula
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/go-musicfox/spotifox/releases/download/v1.0.0/spotifox_1.0.0_darwin_amd64.zip"
-      sha256 "66f08fcf468a37337e587ae811c38dc8c1b9eb97172cc4010d934f2b5bf27bf6"
+      url "https://github.com/go-musicfox/spotifox/releases/download/v1.0.1/spotifox_1.0.1_darwin_amd64.zip"
+      sha256 "1652463ffcc1e2c37eb1b18cea03423879578204b3c826b3a24a710ffe79bb7c"
 
       def install
         system 'echo', '-e', "\033[1;33mStar✨ Please~\033[0m \033[4;36mhttps://github.com/go-musicfox/spotifox \033[0m"
@@ -32,8 +32,8 @@ class Spotifox < Formula
 
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/go-musicfox/spotifox/releases/download/v1.0.0/spotifox_1.0.0_linux_arm64.zip"
-      sha256 "45c2dc5fbd2ba7d0ca00b6220ad1cdce17234888add6a68a53cdf353d51ab3bd"
+      url "https://github.com/go-musicfox/spotifox/releases/download/v1.0.1/spotifox_1.0.1_linux_arm64.zip"
+      sha256 "4762b122116ce3e3d9e4fecac7c5e68c36705a712e1143886cd13b9e8f7d69b4"
 
       def install
         system 'echo', '-e', "\033[1;33mStar✨ Please~\033[0m \033[4;36mhttps://github.com/go-musicfox/spotifox \033[0m"
@@ -41,8 +41,8 @@ class Spotifox < Formula
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/go-musicfox/spotifox/releases/download/v1.0.0/spotifox_1.0.0_linux_amd64.zip"
-      sha256 "12eeb86d3629847b55a3c23e92fcc9a04089f96b9bee5ee82d6b994f0970f68e"
+      url "https://github.com/go-musicfox/spotifox/releases/download/v1.0.1/spotifox_1.0.1_linux_amd64.zip"
+      sha256 "0a91be1ba30c9a7e3d37aba6f23a33df9fa7dd152a77c5b3b6b858a1d548045b"
 
       def install
         system 'echo', '-e', "\033[1;33mStar✨ Please~\033[0m \033[4;36mhttps://github.com/go-musicfox/spotifox \033[0m"
@@ -50,8 +50,8 @@ class Spotifox < Formula
       end
     end
     if Hardware::CPU.arm? && !Hardware::CPU.is_64_bit?
-      url "https://github.com/go-musicfox/spotifox/releases/download/v1.0.0/spotifox_1.0.0_linux_arm.zip"
-      sha256 "a785205d20aabc2b10fafcdfbf560be0dc2f5e53022993d4bd6a2419d70bd73f"
+      url "https://github.com/go-musicfox/spotifox/releases/download/v1.0.1/spotifox_1.0.1_linux_arm.zip"
+      sha256 "b1d8ec1f83470ce1aff12461a7ef0ac4b45ad02f8d472aa2af94953483a1503c"
 
       def install
         system 'echo', '-e', "\033[1;33mStar✨ Please~\033[0m \033[4;36mhttps://github.com/go-musicfox/spotifox \033[0m"
