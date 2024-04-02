@@ -16,7 +16,12 @@ class GoMusicfox < Formula
 
       def install
         system 'echo', '-e', "\033[1;33m给个star✨吧~\033[0m \033[4;36mhttps://github.com/go-musicfox/go-musicfox \033[0m"
-        bin.install 'musicfox'
+        if build.head?
+          system "make build GOBINARY=" + ENV["HOMEBREW_PREFIX"] + "/bin/go"
+          bin.install 'bin/musicfox'
+        else
+          bin.install 'musicfox'
+        end
       end
     end
     if Hardware::CPU.arm?
@@ -25,7 +30,12 @@ class GoMusicfox < Formula
 
       def install
         system 'echo', '-e', "\033[1;33m给个star✨吧~\033[0m \033[4;36mhttps://github.com/go-musicfox/go-musicfox \033[0m"
-        bin.install 'musicfox'
+        if build.head?
+          system "make build GOBINARY=" + ENV["HOMEBREW_PREFIX"] + "/bin/go"
+          bin.install 'bin/musicfox'
+        else
+          bin.install 'musicfox'
+        end
       end
     end
   end
@@ -37,7 +47,12 @@ class GoMusicfox < Formula
 
       def install
         system 'echo', '-e', "\033[1;33m给个star✨吧~\033[0m \033[4;36mhttps://github.com/go-musicfox/go-musicfox \033[0m"
-        bin.install 'musicfox'
+        if build.head?
+          system "make build GOBINARY=" + ENV["HOMEBREW_PREFIX"] + "/bin/go"
+          bin.install 'bin/musicfox'
+        else
+          bin.install 'musicfox'
+        end
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
@@ -46,7 +61,12 @@ class GoMusicfox < Formula
 
       def install
         system 'echo', '-e', "\033[1;33m给个star✨吧~\033[0m \033[4;36mhttps://github.com/go-musicfox/go-musicfox \033[0m"
-        bin.install 'musicfox'
+        if build.head?
+          system "make build GOBINARY=" + ENV["HOMEBREW_PREFIX"] + "/bin/go"
+          bin.install 'bin/musicfox'
+        else
+          bin.install 'musicfox'
+        end
       end
     end
     if Hardware::CPU.intel?
@@ -55,8 +75,17 @@ class GoMusicfox < Formula
 
       def install
         system 'echo', '-e', "\033[1;33m给个star✨吧~\033[0m \033[4;36mhttps://github.com/go-musicfox/go-musicfox \033[0m"
-        bin.install 'musicfox'
+        if build.head?
+          system "make build GOBINARY=" + ENV["HOMEBREW_PREFIX"] + "/bin/go"
+          bin.install 'bin/musicfox'
+        else
+          bin.install 'musicfox'
+        end
       end
     end
   end
+
+  head "https://github.com/go-musicfox/go-musicfox.git"
+  depends_on "go" => :build if build.head?
 end
+
