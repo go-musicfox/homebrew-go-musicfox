@@ -5,33 +5,39 @@
 class GoMusicfox < Formula
   desc "go-musicfox是musicfox的重写版，使用Go编写的网易云音乐命令行程序。"
   homepage "https://github.com/go-musicfox/go-musicfox"
-  version "4.3.3"
-
-  depends_on "terminal-notifier" => :optional
+  version "4.4.0"
 
   on_macos do
-    if Hardware::CPU.intel?
-      url "https://github.com/go-musicfox/go-musicfox/releases/download/v4.3.3/go-musicfox_4.3.3_darwin_amd64.zip"
-      sha256 "d416e40fbaac24444ce5ff373ff1fa60a04c5811232ccf21d6e79f569192e90b"
+    if Hardware::CPU.arm?
+      url "https://github.com/go-musicfox/go-musicfox/releases/download/v4.4.0/go-musicfox_4.4.0_darwin_arm64.zip"
+      sha256 "e96872efa641591eff58d095810fa4c5080a51f84d001428638afde6645812b1"
 
       def install
         system 'echo', '-e', "\033[1;33m给个star✨吧~\033[0m \033[4;36mhttps://github.com/go-musicfox/go-musicfox \033[0m"
         if build.head?
-          system "make build GOBINARY=" + ENV["HOMEBREW_PREFIX"] + "/bin/go"
+          if OS.mac?
+            system "make build BUILD_TAGS='enable_global_hotkey' GOBINARY=" + ENV["HOMEBREW_PREFIX"] + "/bin/go"
+          else
+            system "make build GOBINARY=" + ENV["HOMEBREW_PREFIX"] + "/bin/go"
+          end
           bin.install 'bin/musicfox'
         else
           bin.install 'musicfox'
         end
       end
     end
-    if Hardware::CPU.arm?
-      url "https://github.com/go-musicfox/go-musicfox/releases/download/v4.3.3/go-musicfox_4.3.3_darwin_arm64.zip"
-      sha256 "cb38508897646901d73c241f2756c39ee55c44491f9c0d1ee6b1c717b8992557"
+    if Hardware::CPU.intel?
+      url "https://github.com/go-musicfox/go-musicfox/releases/download/v4.4.0/go-musicfox_4.4.0_darwin_amd64.zip"
+      sha256 "1b8f6cd3b7a332534757bbfea515e5108d95835704f087da199e0baa59ac5522"
 
       def install
         system 'echo', '-e', "\033[1;33m给个star✨吧~\033[0m \033[4;36mhttps://github.com/go-musicfox/go-musicfox \033[0m"
         if build.head?
-          system "make build GOBINARY=" + ENV["HOMEBREW_PREFIX"] + "/bin/go"
+          if OS.mac?
+            system "make build BUILD_TAGS='enable_global_hotkey' GOBINARY=" + ENV["HOMEBREW_PREFIX"] + "/bin/go"
+          else
+            system "make build GOBINARY=" + ENV["HOMEBREW_PREFIX"] + "/bin/go"
+          end
           bin.install 'bin/musicfox'
         else
           bin.install 'musicfox'
@@ -42,13 +48,17 @@ class GoMusicfox < Formula
 
   on_linux do
     if Hardware::CPU.arm? && !Hardware::CPU.is_64_bit?
-      url "https://github.com/go-musicfox/go-musicfox/releases/download/v4.3.3/go-musicfox_4.3.3_linux_arm.zip"
-      sha256 "3a4a79418445f098ba9b0b5287df9cec74bb438014c770942998b367c94a0225"
+      url "https://github.com/go-musicfox/go-musicfox/releases/download/v4.4.0/go-musicfox_4.4.0_linux_arm.zip"
+      sha256 "29f3a43044c668cdba2d7d2ac5cc9068a45e6d92a784df62dadc252e104d1579"
 
       def install
         system 'echo', '-e', "\033[1;33m给个star✨吧~\033[0m \033[4;36mhttps://github.com/go-musicfox/go-musicfox \033[0m"
         if build.head?
-          system "make build GOBINARY=" + ENV["HOMEBREW_PREFIX"] + "/bin/go"
+          if OS.mac?
+            system "make build BUILD_TAGS='enable_global_hotkey' GOBINARY=" + ENV["HOMEBREW_PREFIX"] + "/bin/go"
+          else
+            system "make build GOBINARY=" + ENV["HOMEBREW_PREFIX"] + "/bin/go"
+          end
           bin.install 'bin/musicfox'
         else
           bin.install 'musicfox'
@@ -56,13 +66,17 @@ class GoMusicfox < Formula
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/go-musicfox/go-musicfox/releases/download/v4.3.3/go-musicfox_4.3.3_linux_arm64.zip"
-      sha256 "5a7f9b16eb5f17b9442780237e3e28c0de229abed03385f29e6cabe4dcf2359c"
+      url "https://github.com/go-musicfox/go-musicfox/releases/download/v4.4.0/go-musicfox_4.4.0_linux_arm64.zip"
+      sha256 "c4b43e18d24c9273c45b4740c775114897fec91a9c4c3fcd6a45e8ea29bacbbb"
 
       def install
         system 'echo', '-e', "\033[1;33m给个star✨吧~\033[0m \033[4;36mhttps://github.com/go-musicfox/go-musicfox \033[0m"
         if build.head?
-          system "make build GOBINARY=" + ENV["HOMEBREW_PREFIX"] + "/bin/go"
+          if OS.mac?
+            system "make build BUILD_TAGS='enable_global_hotkey' GOBINARY=" + ENV["HOMEBREW_PREFIX"] + "/bin/go"
+          else
+            system "make build GOBINARY=" + ENV["HOMEBREW_PREFIX"] + "/bin/go"
+          end
           bin.install 'bin/musicfox'
         else
           bin.install 'musicfox'
@@ -70,13 +84,17 @@ class GoMusicfox < Formula
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/go-musicfox/go-musicfox/releases/download/v4.3.3/go-musicfox_4.3.3_linux_amd64.zip"
-      sha256 "0f49ca40a8c7f1965e1915eab6092e4c70af2b81e5652628fbecec37f3606844"
+      url "https://github.com/go-musicfox/go-musicfox/releases/download/v4.4.0/go-musicfox_4.4.0_linux_amd64.zip"
+      sha256 "56caf252ab5086c1aa50d4672941ef0fa71c48674ea832acb80459eaf1fb2114"
 
       def install
         system 'echo', '-e', "\033[1;33m给个star✨吧~\033[0m \033[4;36mhttps://github.com/go-musicfox/go-musicfox \033[0m"
         if build.head?
-          system "make build GOBINARY=" + ENV["HOMEBREW_PREFIX"] + "/bin/go"
+          if OS.mac?
+            system "make build BUILD_TAGS='enable_global_hotkey' GOBINARY=" + ENV["HOMEBREW_PREFIX"] + "/bin/go"
+          else
+            system "make build GOBINARY=" + ENV["HOMEBREW_PREFIX"] + "/bin/go"
+          end
           bin.install 'bin/musicfox'
         else
           bin.install 'musicfox'
@@ -88,4 +106,3 @@ class GoMusicfox < Formula
   head "https://github.com/go-musicfox/go-musicfox.git"
   depends_on "go" => :build if build.head?
 end
-
