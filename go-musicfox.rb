@@ -13,9 +13,9 @@ class GoMusicfox < Formula
       sha256 "e5860c8e6290127dc07577ca4ce69b62b23ce7880a10edbdbf5ceb44bfa2040d"
 
       def install
-        system 'git', 'fetch', '--tags'
         system 'echo', '-e', "\033[1;33m给个star✨吧~\033[0m \033[4;36mhttps://github.com/go-musicfox/go-musicfox \033[0m"
         if build.head?
+          system 'git', 'fetch', '--tags'
           if OS.mac?
             system "make build BUILD_TAGS='enable_global_hotkey' GOBINARY=" + ENV["HOMEBREW_PREFIX"] + "/bin/go"
           else
@@ -32,9 +32,9 @@ class GoMusicfox < Formula
       sha256 "71ff224b43035fb795fca28cbb6c4b18e406eea40ea012610c80c575ddc9bf39"
 
       def install
-        system 'git', 'fetch', '--tags'
         system 'echo', '-e', "\033[1;33m给个star✨吧~\033[0m \033[4;36mhttps://github.com/go-musicfox/go-musicfox \033[0m"
         if build.head?
+          system 'git', 'fetch', '--tags'
           if OS.mac?
             system "make build BUILD_TAGS='enable_global_hotkey' GOBINARY=" + ENV["HOMEBREW_PREFIX"] + "/bin/go"
           else
@@ -54,9 +54,9 @@ class GoMusicfox < Formula
       sha256 "108d79008394f35eea1e995c840bc09bb633b3926b177cc523436b1424322417"
 
       def install
-        system 'git', 'fetch', '--tags'
         system 'echo', '-e', "\033[1;33m给个star✨吧~\033[0m \033[4;36mhttps://github.com/go-musicfox/go-musicfox \033[0m"
         if build.head?
+          system 'git', 'fetch', '--tags'
           if OS.mac?
             system "make build BUILD_TAGS='enable_global_hotkey' GOBINARY=" + ENV["HOMEBREW_PREFIX"] + "/bin/go"
           else
@@ -73,9 +73,9 @@ class GoMusicfox < Formula
       sha256 "1e72fd676922fe7e4e799c554a20e2d401fa01d90f5b8fbd31c7df6b72dca9f7"
 
       def install
-        system 'git', 'fetch', '--tags'
         system 'echo', '-e', "\033[1;33m给个star✨吧~\033[0m \033[4;36mhttps://github.com/go-musicfox/go-musicfox \033[0m"
         if build.head?
+          system 'git', 'fetch', '--tags'
           if OS.mac?
             system "make build BUILD_TAGS='enable_global_hotkey' GOBINARY=" + ENV["HOMEBREW_PREFIX"] + "/bin/go"
           else
@@ -92,9 +92,9 @@ class GoMusicfox < Formula
       sha256 "98da5c71963558503653d05107f4543c3dee919b575f835c046de41b3b8e24cf"
 
       def install
-        system 'git', 'fetch', '--tags'
         system 'echo', '-e', "\033[1;33m给个star✨吧~\033[0m \033[4;36mhttps://github.com/go-musicfox/go-musicfox \033[0m"
         if build.head?
+          system 'git', 'fetch', '--tags'
           if OS.mac?
             system "make build BUILD_TAGS='enable_global_hotkey' GOBINARY=" + ENV["HOMEBREW_PREFIX"] + "/bin/go"
           else
