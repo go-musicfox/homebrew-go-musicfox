@@ -13,22 +13,22 @@ cask "go-musicfox" do
   on_macos do
     on_intel do
       url "https://github.com/go-musicfox/go-musicfox/releases/download/v4.7.1/go-musicfox_4.7.1_darwin_amd64.zip"
-      sha256 "ee52c8dea65c65d2918a663bdc2e41216fb1c3e8a3e0c22fead46617b7c0a7bf"
+      sha256 "ae6b199c04707ab912a70b17ea8201cc21477a70277eb02041829033b4bbc2c9"
     end
     on_arm do
       url "https://github.com/go-musicfox/go-musicfox/releases/download/v4.7.1/go-musicfox_4.7.1_darwin_arm64.zip"
-      sha256 "a49d07912a8f65f6f402bb1430b65bd73bff72e4b72fe86c988a4f7ad24fd149"
+      sha256 "fd1fb77b8dac3820cc042841be4f078f2dea247a76cdcbdacea6081a4d355dc1"
     end
   end
 
   on_linux do
     on_intel do
       url "https://github.com/go-musicfox/go-musicfox/releases/download/v4.7.1/go-musicfox_4.7.1_linux_amd64.zip"
-      sha256 "7717f91e2dd3b10e92e34e36527fba95cd519bd9dec7fe70cc5411af49628384"
+      sha256 "6cedacfe9a8606dbd4d9cb249fef21ccc20e7d2d50f687110d972c66e7607115"
     end
     on_arm do
       url "https://github.com/go-musicfox/go-musicfox/releases/download/v4.7.1/go-musicfox_4.7.1_linux_arm64.zip"
-      sha256 "e95bb5aebc14c5c2eaaf71cc956ded35561ff54dd682c21b144a5c2ea53ff5d8"
+      sha256 "84164e82223108f700b981b5478d13b1f50ed2281f8e3736cc481fcb3431a2d4"
     end
   end
 
