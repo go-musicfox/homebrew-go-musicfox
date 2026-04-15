@@ -2,7 +2,7 @@
 cask "go-musicfox" do
   desc "go-musicfox是musicfox的重写版，使用Go编写的网易云音乐命令行程序。"
   homepage "https://github.com/go-musicfox/go-musicfox"
-  version "4.8.3"
+  version "4.8.4"
 
   livecheck do
     skip "Auto-generated on release."
@@ -12,23 +12,23 @@ cask "go-musicfox" do
 
   on_macos do
     on_intel do
-      url "https://github.com/go-musicfox/go-musicfox/releases/download/v4.8.3/go-musicfox_4.8.3_darwin_amd64.zip"
-      sha256 "f818cf27b3d705943c2308dc158b642f9f714123092c8ff776be4e8885f051b7"
+      url "https://github.com/go-musicfox/go-musicfox/releases/download/v4.8.4/go-musicfox_4.8.4_darwin_amd64.zip"
+      sha256 "6289bd1f2dea7ad78735d81ea2347f4a2333a817ff72b4be53f6f11c51b6d0fb"
     end
     on_arm do
-      url "https://github.com/go-musicfox/go-musicfox/releases/download/v4.8.3/go-musicfox_4.8.3_darwin_arm64.zip"
-      sha256 "7fba33838d48db08e898cdf434ce764e38f0f9afcdd3aaa201200ee67f0ca936"
+      url "https://github.com/go-musicfox/go-musicfox/releases/download/v4.8.4/go-musicfox_4.8.4_darwin_arm64.zip"
+      sha256 "68b5adbbe69ab6c386c9a66b1fd8bd9bdbceeeddf4d11e438429f0150928be58"
     end
   end
 
   on_linux do
     on_intel do
-      url "https://github.com/go-musicfox/go-musicfox/releases/download/v4.8.3/go-musicfox_4.8.3_linux_amd64.zip"
-      sha256 "959afdbfa0ac0cf329e1c7ecb41591ae149901efbe9418fa7fcae671f719aa51"
+      url "https://github.com/go-musicfox/go-musicfox/releases/download/v4.8.4/go-musicfox_4.8.4_linux_amd64.zip"
+      sha256 "d1d58afbc62f6e0f1f9819a9f2ac2c628703b8eff50688601ba5c59785a1cdaa"
     end
     on_arm do
-      url "https://github.com/go-musicfox/go-musicfox/releases/download/v4.8.3/go-musicfox_4.8.3_linux_arm64.zip"
-      sha256 "7fe55b3d4e645b8fd195cc34e5850bef5b07225a572e1c1c06f4683e1e0f9802"
+      url "https://github.com/go-musicfox/go-musicfox/releases/download/v4.8.4/go-musicfox_4.8.4_linux_arm64.zip"
+      sha256 "750f6942972c26bcdf73802d23c71480fa8c61358090e4e465d150cd71a63873"
     end
   end
 
