@@ -2,27 +2,28 @@
 cask "go-musicfox-macapp" do
   desc "go-musicfox MacApp版本，使用Go编写的网易云音乐命令行程序。"
   homepage "https://github.com/go-musicfox/go-musicfox"
-  version "4.8.2"
+  version "4.8.3"
 
   livecheck do
     skip "Auto-generated on release."
   end
 
-  binary "musicfox.app/Contents/MacOS/musicfox"
+  binary "musicfox.app/Contents/MacOS/musicfox-app.wrapper.sh"
 
   on_macos do
     on_intel do
-      url "https://github.com/go-musicfox/go-musicfox/releases/download/v4.8.2/go-musicfox_4.8.2_darwin_amd64.app.zip"
-      sha256 "a7bda9da03aeb13fd4f7397bf865aba95e34b0ed8af7b594e5e42e74e22eefdd"
+      url "https://github.com/go-musicfox/go-musicfox/releases/download/v4.8.3/go-musicfox_4.8.3_darwin_amd64.app.zip"
+      sha256 "76aa7b262a722e5cee4450a8ba14581fe3d06c836233343ef3c1f22136adddce"
     end
     on_arm do
-      url "https://github.com/go-musicfox/go-musicfox/releases/download/v4.8.2/go-musicfox_4.8.2_darwin_arm64.app.zip"
-      sha256 "aa224536d63a65005fe05310e816fb2b1c3c622ee924fe7fb1dbc3efc108650a"
+      url "https://github.com/go-musicfox/go-musicfox/releases/download/v4.8.3/go-musicfox_4.8.3_darwin_arm64.app.zip"
+      sha256 "412856cf254ad6300323fdafa64d51a00c76a2376c15a503d644bccc7e5a4a7f"
     end
   end
 
   postflight do
     system 'echo', '-e', "\033[1;33m给个star✨吧~\033[0m \033[4;36mhttps://github.com/go-musicfox/go-musicfox \033[0m"
+    system 'xattr', '-r', '-d', 'com.apple.quarantine', '--', "#{caskroom_path}/#{version}/musicfox.app"
   end
 
   # No zap stanza required
